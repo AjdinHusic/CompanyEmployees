@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200819183535_DatabaseCreation.cs" />
+    <Compile Remove="Migrations\20200819183535_DatabaseCreation.Designer.cs" />
+    <Compile Remove="Migrations\20200820173926_InitialData.cs" />
+    <Compile Remove="Migrations\20200820173926_InitialData.Designer.cs" />
+    <Compile Remove="Migrations\20200824170941_InitialData.cs" />
+    <Compile Remove="Migrations\20200824170941_InitialData.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="appsettings.Production.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="appsettings.Production.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.21" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LoggerService\LoggerService.csproj" />
+    <ProjectReference Include="..\Repository\Repository.csproj" />
+  </ItemGroup>
+
+
+</Project>
