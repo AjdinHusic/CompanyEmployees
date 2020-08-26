@@ -2,13 +2,20 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Contracts
 {
     public interface ICompanyRepository
     {
-        IEnumerable<Company> GetAllCompanies(bool trackChanges);
+        Task<IEnumerable<Company>> GetAllCompaniesAsync(bool trackChanges);
 
-        Company GetCompany(int companyId, bool trackChanges);
+        Task<Company> GetCompanyAsync(int companyId, bool trackChanges);
+
+        void CreateCompany(Company company);
+
+        Task<IEnumerable<Company>> GetByIdsAsync(IEnumerable<int> ids, bool trackChanges);
+
+        void DeleteCompany(Company company);
     }
 }

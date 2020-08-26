@@ -1,0 +1,13 @@
+2020-08-26 22:06:43.0547 ERROR Invalid model state for the EmployeeForCreationDto object
+2020-08-26 22:12:56.3845 ERROR Invalid model state for the EmployeeForUpdateDto object
+2020-08-26 22:14:35.4303 ERROR patchDoc object sent from client is null.
+2020-08-26 22:14:58.8339 INFO Employee with id: 5 doesn't exist in the database.
+2020-08-26 22:17:18.2311 INFO Employee with id: 5 doesn't exist in the database.
+2020-08-26 22:17:25.5639 INFO Employee with id: 5 doesn't exist in the database.
+2020-08-26 22:17:29.8258 INFO Employee with id: 6 doesn't exist in the database.
+2020-08-26 22:18:09.5778 ERROR Invalid model state for the patch document
+2020-08-26 22:20:34.2111 ERROR Invalid model state for the patch document
+2020-08-26 22:47:15.1641 INFO Employee with id: 6 doesn't exist in the database.
+2020-08-26 22:47:19.3595 INFO Employee with id: 6 doesn't exist in the database.
+2020-08-26 23:04:14.7430 ERROR Invalid model state for the object. Controller: Companies, action: CreateCompany
+2020-08-26 23:08:38.8983 ERROR Invalid model state for the object. Controller: Employees, action: CreateEmployeeForCompany
