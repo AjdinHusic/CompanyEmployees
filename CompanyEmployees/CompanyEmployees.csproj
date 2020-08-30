@@ -11,6 +11,18 @@
     <Compile Remove="Migrations\20200820173926_InitialData.Designer.cs" />
     <Compile Remove="Migrations\20200824170941_InitialData.cs" />
     <Compile Remove="Migrations\20200824170941_InitialData.Designer.cs" />
+    <Compile Remove="Migrations\20200830001533_CreatingIdentityTables.cs" />
+    <Compile Remove="Migrations\20200830001533_CreatingIdentityTables.Designer.cs" />
+    <Compile Remove="Migrations\20200830002600_CreatingIdentityTables.cs" />
+    <Compile Remove="Migrations\20200830002600_CreatingIdentityTables.Designer.cs" />
+    <Compile Remove="Migrations\20200830011615_CreatingIdentityTables.cs" />
+    <Compile Remove="Migrations\20200830011615_CreatingIdentityTables.Designer.cs" />
+    <Compile Remove="Migrations\20200830012809_CreatingIdentityTables.cs" />
+    <Compile Remove="Migrations\20200830012809_CreatingIdentityTables.Designer.cs" />
+    <Compile Remove="Migrations\20200830020358_AddedPasswordRequirements.cs" />
+    <Compile Remove="Migrations\20200830020358_AddedPasswordRequirements.Designer.cs" />
+    <Compile Remove="Migrations\20200830020440_AddedPasswordRequirements2.cs" />
+    <Compile Remove="Migrations\20200830020440_AddedPasswordRequirements2.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,9 +34,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AspNetCoreRateLimit" Version="3.0.5" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="Marvin.Cache.Headers" Version="5.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.7" />
     <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="3.1.7" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.7">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

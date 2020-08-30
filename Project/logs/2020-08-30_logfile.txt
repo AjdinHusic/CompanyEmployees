@@ -1,0 +1,2 @@
+2020-08-30 04:02:47.5863 ERROR Invalid model state for the object. Controller: Authentication, action: RegisterUser
+2020-08-30 23:32:15.3666 WARN Authenticate: Authentication failed. Wrong user name or password.
