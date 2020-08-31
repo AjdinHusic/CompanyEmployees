@@ -60,6 +60,7 @@ namespace CompanyEmployees
 
             services.ConfigureRateLimitingOptions();
             services.AddHttpContextAccessor();
+            services.ConfigureSwagger();
             services.Configure<ApiBehaviorOptions>(options =>
             {
                 options.SuppressModelStateInvalidFilter = true;
@@ -87,6 +88,13 @@ namespace CompanyEmployees
             {
                 app.UseHsts();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(s =>
+            {
+                s.SwaggerEndpoint("/swagger/v1/swagger.json", "Code Maze API v1");
+                s.SwaggerEndpoint("/swagger/v2/swagger.json", "Code Maze API v2");
+            });
 
             app.ConfigureExceptionHandler(logger);
             app.UseHttpsRedirection();
